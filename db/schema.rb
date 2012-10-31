@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121029174721) do
+ActiveRecord::Schema.define(:version => 20121030163301) do
+
+  create_table "portfolios", :force => true do |t|
+    t.string   "symbol"
+    t.integer  "quantity"
+    t.float    "purchase_price"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "purchase_histories", :force => true do |t|
     t.string   "symbol"

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @portfolio.symbol %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @portfolio.quantity %>
+</p>
+
+<p>
+  <b>Purchase price:</b>
+  <%= @portfolio.purchase_price %>
+</p>
+
+
+<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', portfolios_path %>

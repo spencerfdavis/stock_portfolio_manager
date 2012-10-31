@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
 */
+
+.red {
+  color: #ff0000;
+}
+
+.green {
+  color: #008000;
+}
