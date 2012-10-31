@@ -2,7 +2,8 @@ class Portfolio < ActiveRecord::Base
   validates_presence_of :symbol, :quantity, :purchase_price
   validates_numericality_of :quantity, :purchase_price
   
-  
+  cattr_reader :per_page
+  @@per_page = 15
   
   # def self.calc_value
   #   total_value = 0

@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios
   # GET /portfolios.json
   def index
-    @portfolios = Portfolio.all
+    @portfolios = Portfolio.paginate(:page => params[:page])
     @quotes = StockQuote.quotes_from_entries(@portfolios)
 
     respond_to do |format|

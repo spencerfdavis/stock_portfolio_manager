@@ -25,6 +25,7 @@ gem 'jquery-rails', '2.0.1'
 gem 'twitter-bootstrap-rails', '2.0.4.0'
 gem "tabletastic", '0.2.3'
 gem 'simple_form', '2.0.1'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
