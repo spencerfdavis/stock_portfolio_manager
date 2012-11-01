@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class StockTest < ActiveSupport::TestCase
-  test "should not save without symbol" do
+  test "should not save without symbol" do  
     p = Stock.new
     p.purchase_price=1.05
     p.quantity=50
@@ -36,5 +36,13 @@ class StockTest < ActiveSupport::TestCase
     p.symbol="AAPL"
     p.quantity=50    
     assert !p.save
+  end
+  
+  test "should save with valid symbol, price, qty" do
+    p = Stock.new
+    p.symbol="AAPL"
+    p.quantity=50  
+    p.purchase_price=50  
+    assert p.save
   end
 end
