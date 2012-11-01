@@ -1,6 +1,6 @@
-PortfolioManagement::Application.routes.draw do
-  resources :portfolios
-  root :to => 'portfolios#index'
+StockManagement::Application.routes.draw do
+  resources :stocks
+  root :to => 'stocks#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

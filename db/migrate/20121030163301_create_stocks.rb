@@ -1,6 +1,6 @@
-class CreatePortfolios < ActiveRecord::Migration
+class CreateStocks < ActiveRecord::Migration
   def change
-    create_table :portfolios do |t|
+    create_table :stocks do |t|
       t.string :symbol
       t.integer :quantity
       t.float :purchase_price

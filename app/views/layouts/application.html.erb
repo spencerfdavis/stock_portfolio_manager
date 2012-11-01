@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio Management</title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -30,11 +30,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Portfolio Management</a>
+          <a class="brand" href="/">Portfolio Management</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
-              <li><a href="/"><span class="white">Stocks:</span> <span class="badge badge-info">14</span></a></li>
-              <li><a href="/"><span class="white">Portfolio Value:</span> <span class="badge badge-success">$1500.00</span></a></li>
+              <li><a href="/"><span class="white">Stocks:</span> <span class="badge badge-info"><%= number_with_delimiter(@total_stocks) %></span></a></li>
+              <li><a href="/"><span class="white">Portfolio Value:</span> <span class="badge badge-success"><%= number_to_currency(@portfolio_value) %></span></a></li>
             </ul>            
             
           </div><!--/.nav-collapse -->
@@ -48,8 +48,8 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-                <li><%= link_to "Portfolio List", root_url  %></li>
-                <li><%= link_to "Add to Portfolio", new_portfolio_path  %></li>
+                <li><%= link_to "My Portfolio", root_url  %></li>
+                <li><%= link_to "Add Stock to Portfolio", new_stock_path  %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

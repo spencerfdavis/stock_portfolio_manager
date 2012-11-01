@@ -7,4 +7,8 @@ module ApplicationHelper
       end
     end   
   end
+  
+  def format_date(date)
+    date.localtime.strftime("%m/%d/%Y %I:%M:%S %p")    
+  end  
 end

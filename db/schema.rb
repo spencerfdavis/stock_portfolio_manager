@@ -13,11 +13,12 @@
 
 ActiveRecord::Schema.define(:version => 20121030163301) do
 
-  create_table "portfolios", :force => true do |t|
+  create_table "stocks", :force => true do |t|
     t.string   "symbol"
     t.integer  "quantity"
     t.float    "purchase_price"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
+
 end
