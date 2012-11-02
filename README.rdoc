@@ -1,0 +1,33 @@
+== Portfolio Management
+
+Portfolio Management is an application for keeping track of a user's stock portfolio.  It contains the ability to:
+
+1. Create and manage holdings by entering a symbol, price, and qty
+2. A view of holdings and computed values
+3. Pulls information from Yahoo Finance.
+  
+== Dependencies
+
+Before running the application, you will need:
+1. Ruby 1.9.2
+2. Rails 3.2
+3. RubyGems 1.8.x
+4. Bundler 1.1.x
+5. MySQL 5.5.x
+
+== Deployment Instructions
+
+Get a copy of the application.
+  $ git clone https://github.com/spencerfdavis/stock_portfolio_manager.git
+  $ cd stock_portfolio_manager
+
+Use Bundler to install gems.
+  $ bundle install
+
+Configure your MySQL database username/password/host in config/database.yml for all environments.
+
+Create and Setup the database for all environments. 
+  $ rake db:setup RAILS_ENV=`ENV`
+
+Test with WEBrick.
+  $ rails server
