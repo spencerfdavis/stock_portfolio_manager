@@ -31,3 +31,8 @@ Create and Setup the database for all environments.
 
 Test with WEBrick.
   $ rails server
+
+== Deploying to Production Server
+
+Ensure you have SSH keys setup between the production server.  Edit config/deploy.rb and change the location of your deployment server.  Deploy by using:
+  $ cap deploy

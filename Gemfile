@@ -28,6 +28,7 @@ gem 'simple_form'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'client_side_validations'
 gem 'client_side_validations-simple_form'
+gem 'capistrano', '2.12.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
