@@ -4,7 +4,7 @@
 
 Make sure you have Ruby 1.9.2 and Bundler installed.  To deploy:
 
-```ruby
+```bash
 $ git clone https://github.com/spencerfdavis/stock_portfolio_manager.git
 $ cd stock_portfolio_manager
 $ bundle install
