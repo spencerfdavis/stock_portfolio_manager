@@ -2,10 +2,13 @@
 
 ## Instructions ##
 
-In your Gemfile add the following:
+Make sure you have Ruby 1.9.2 and Bundler installed.  To deploy:
 
 ```ruby
-gem 'simple_form'
-gem 'client_side_validations'
-gem 'client_side_validations-simple_form'
-```
+$ git clone https://github.com/spencerfdavis/stock_portfolio_manager.git
+$ cd stock_portfolio_manager
+$ bundle install
+````
+Setup database username/password in config/database.yml
+
+$ rake db:setup RAILS_ENV=production
