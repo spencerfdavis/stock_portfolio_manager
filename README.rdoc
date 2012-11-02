@@ -1,4 +1,4 @@
-== Portfolio Management
+== Portfolio Management v. 1.0.1
 
 Portfolio Management is an application for keeping track of a user's stock portfolio.  It contains the ability to:
 
